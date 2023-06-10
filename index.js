@@ -38,6 +38,8 @@ document.getElementById("add-item").addEventListener("click", () => {
 
   // Populating the todo list table with localStorage on a click
   updateTableBodyWithNotes(itemJsonArray);
+  document.getElementById("title").value = "";
+  document.getElementById("description").value = "";
 });
 
 // deleting items from localStorae to reflect in notes table.
